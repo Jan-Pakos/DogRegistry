@@ -66,15 +66,11 @@ public class Dog {
             }
             // OM LÄGGA TILL OWNER
         } else {
-
             // OM HUNDEN INTE HAR EN OWNER LÄGG TILL
             if (this.owner == null) {
-
                 // LÄGG TILL DENNA HUND TILL OWNERS LISTA AV HUNDAR
                 inputOwner.addDog(this);
-
                 this.owner = inputOwner;
-
                 return true;
             } else {
                 return false;
