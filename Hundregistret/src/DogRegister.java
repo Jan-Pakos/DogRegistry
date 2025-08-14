@@ -21,15 +21,18 @@ public class DogRegister {
     private OwnerCollection ownerCollection;
     private DogCollection dogCollection;
 
+    public static void main(String[] args) {
+        new DogRegister().start();
+    }
 
     private void start() {
         initialize();
         runCommandLoop();
-        System.out.println("Application shut down cleanly.");
+        exitProgram();
     }
 
-    public static void main(String[] args) {
-        new DogRegister().start();
+    private void exitProgram() {
+        System.out.println("Application shut down cleanly.");
     }
 
     private void initialize() {
@@ -371,7 +374,5 @@ public class DogRegister {
         System.out.println(ownerCollection.getOwner(ownerName));
         return owner;
     }
-
-
 }
 

@@ -55,7 +55,6 @@ public class Dog {
     public boolean setOwner(Owner inputOwner) {
         // TA BORT OWNER
         if (inputOwner == null) {
-
             // OM HUNDEN HAR EN OWNER
             if (this.owner != null) {
                 this.owner.removeDog(this);

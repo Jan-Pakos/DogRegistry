@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class InputReader {
     private static ArrayList<InputStream> usedStreams = new ArrayList<>();
     private Scanner scanner;
-    private InputStream source;
+    // private InputStream source;
 
     public InputReader() {
         this(System.in);
@@ -17,7 +17,7 @@ public class InputReader {
         if (usedStreams.contains(in)) {
             throw new IllegalStateException("An InputReader for this InputStream already exists.");
         }
-        this.source = in;
+        // this.source = in;
         usedStreams.add(in);
         scanner = new Scanner(in);
     }

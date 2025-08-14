@@ -86,7 +86,8 @@ public class OwnerCollection {
                 listToReturn.add(owner);
             }
         }
-        OwnerSorter.sortOwners(new OwnerNameComparator(), listToReturn);
+        Collections.sort(listToReturn);
+        // OwnerSorter.sortOwners(new OwnerNameComparator(), listToReturn);
         return listToReturn;
     }
 }
